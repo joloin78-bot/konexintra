@@ -561,10 +561,10 @@ function SectionView({ activeNav, documentList, onCreate, onPreviewDoc }: { acti
   );
 }
 
+function AppContent() { return <AppInner />; }
+
 export default function App() {
   return <AuthProvider><AppContent /></AuthProvider>;
 }
-function AppContent() { return <AppInner />; }
-
 
 export default App
