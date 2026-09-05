@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
-import { ArrowUpRight, Bell, BellOff, CalendarDays, CalendarPlus, Check, ChevronDown, ChevronRight, CircleDollarSign, ClipboardList, Download, Eye, FileText, LayoutDashboard, LogOut, Mail, Menu, MoreHorizontal, Plus, Search, Settings as SettingsIcon, Sparkles, TrendingUp, Users, WalletCards, X, Trash2 } from 'lucide-react';
+import { ArrowUpRight, Bell, BellOff, CalendarDays, CalendarPlus, Check, ChevronDown, ChevronRight, CircleDollarSign, ClipboardList, Download, Eye, FileText, LayoutDashboard, LogOut, Mail, Menu, MoveHorizontal as MoreHorizontal, Plus, Search, Settings as SettingsIcon, Sparkles, TrendingUp, Users, WalletCards, X, Trash2 } from 'lucide-react';
 import { supabase } from '@/lib/supabase';
 import { useAuth, AuthProvider, type Profile } from '@/lib/auth';
 import { AuthScreen } from '@/components/AuthScreen';
@@ -565,3 +565,6 @@ export default function App() {
   return <AuthProvider><AppContent /></AuthProvider>;
 }
 function AppContent() { return <AppInner />; }
+
+
+export default App
